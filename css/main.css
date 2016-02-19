@@ -1,0 +1,158 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  padding: 1vh 4vw;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: open sans, helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 1.5em;
+}
+body h1 {
+  color: #999999;
+  text-align: center;
+  float: left;
+  width: calc(100% - 2.5vw);
+  padding-bottom: 2.5vh;
+  border-bottom: 4px solid #ff8a82;
+  margin-bottom: 2.5vh;
+}
+
+div.lottery_card {
+  float: left;
+  width: 7vw;
+  height: 4vh;
+  line-height: 4vh;
+  background: #496E8C;
+  color: #B6EFDF;
+  margin: .3em;
+  text-align: center;
+  -webkit-transform: scale(0.99) rotateY(0deg);
+  -moz-transform: scale(0.99) rotateY(0deg);
+  -ms-transform: scale(0.99) rotateY(0deg);
+  -o-transform: scale(0.99) rotateY(0deg);
+  transform: scale(0.99) rotateY(0deg);
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.8s ease, width 0s linear, height 0s linear;
+  -moz-transition: all 0.8s ease, width 0s linear, height 0s linear;
+  transition: all 0.8s ease, width 0s linear, height 0s linear;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  will-change: background, transform, color, z-index, width, height;
+  border-radius: 5px;
+}
+
+div.flip-it {
+  -webkit-transform: scale(2) rotateY(360deg);
+  -moz-transform: scale(2) rotateY(360deg);
+  -ms-transform: scale(2) rotateY(360deg);
+  -o-transform: scale(2) rotateY(360deg);
+  transform: scale(2) rotateY(360deg);
+  -webkit-transition: all 0.8s ease, width 0s linear, height 0s linear;
+  -moz-transition: all 0.8s ease, width 0s linear, height 0s linear;
+  transition: all 0.8s ease, width 0s linear, height 0s linear;
+  z-index: 2;
+  background: #B6EFDF;
+  color: #496E8C;
+}
+
+div.fliped {
+  z-index: 2;
+  background: #B6EFDF;
+  color: #496E8C;
+}
+
+code {
+  clear: both;
+  float: left;
+  width: calc(100% - 2.5vw);
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  line-height: 5vh;
+  height: 5vh;
+  background: #B6EFDF;
+  color: #496E8C;
+}
+
+#show > div.show_card {
+  z-index: 2;
+  color: #FFFFFF;
+  background: #ff8a82;
+  width: 7vw;
+  height: 4vh;
+  line-height: 4vh;
+  margin: .3em;
+  float: left;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+}
+
+a {
+  width: calc(100% - 5.5vw);
+  clear: both;
+  float: left;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 5vh;
+  height: 5vh;
+  padding: 0 2.5em;
+  border-radius: 80px;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #ff8a82;
+  color: #ff8a82;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+a:active {
+  border-color: #FFFFFF;
+  color: #FFFFFF
+}
+a:hover {
+  background-color: #ff8a82;
+  border-color: #ff8a82;
+  color: #FFFFFF
+}
+
+h2 {
+  clear: both;
+  position: relative;
+  text-align: left;
+  color: #ff8a82;
+  margin-bottom: 1em;
+  z-index: 1;
+  width: 100%;
+  max-width: 620px;
+  margin: 0.8rem 0;
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+h2:before {
+  position: absolute;
+  top: 50%;
+  left: 190px;
+  right: 0;
+  bottom: 0;
+  border-top: 5px solid #f3f3f3;
+  width: 100%;
+  content: "";
+  margin: 0 auto;
+  z-index: -1;
+}
