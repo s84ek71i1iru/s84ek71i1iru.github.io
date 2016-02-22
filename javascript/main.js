@@ -36,7 +36,7 @@ function get_random(doms) {
 
 function card_init(min, max) {
   for (i = max; i >= min; i--) {
-    $('h2').first().after($('<div></div>').text(i).attr('id', 'lot_' + i).addClass('lottery_card'));
+    $('h2').last().after($('<div></div>').text(i).attr('id', 'lot_' + i).addClass('lottery_card'));
   }
 }
 

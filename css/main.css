@@ -23,7 +23,7 @@ body h1 {
 
 div.lottery_card {
   float: left;
-  width: 7vw;
+  width: 8vw;
   height: 4vh;
   line-height: 4vh;
   background: #496E8C;
@@ -86,7 +86,7 @@ code {
   z-index: 2;
   color: #FFFFFF;
   background: #ff8a82;
-  width: 7vw;
+  width: 8vw;
   height: 4vh;
   line-height: 4vh;
   margin: .3em;
